@@ -172,13 +172,7 @@
       if (prev.length > 1) prev[0].classList.add("ol-pagination-edge");
       if (next.length > 1) next[next.length - 1].classList.add("ol-pagination-edge");
     });
-    var originalCounter = document.querySelector(".areal-header .areal-nav-notify-header-icon-counter");
-    if (originalCounter) {
-      var value = compact(originalCounter.textContent);
-      document.querySelectorAll(".ol-notification-count").forEach(function (badge) {
-        if (badge.textContent !== value) badge.textContent = value;
-      });
-    }
+
   }
   function refresh() {
     pending = false;
@@ -203,12 +197,12 @@
     if (open) {
       returnFocus = document.activeElement;
       menu.appendChild(nav); // Keep all menu controls inside the modal's accessible subtree.
-      inertBefore = Array.from(document.querySelectorAll("#app, .ol-mobile-header, .ol-mobile-chat")).map(function (node) {
+      inertBefore = Array.from(document.querySelectorAll("#app, .ol-mobile-header")).map(function (node) {
         var state = { node: node, inert: node.inert };
         node.inert = true;
         return state;
       });
-      if (focus !== false) menu.querySelector("button, a[href]").focus();
+      if (focus !== false) menu.querySelector("button:not([disabled]), a[href]").focus();
     } else {
       menu.after(nav);
       inertBefore.forEach(function (state) { state.node.inert = state.inert; });
@@ -234,9 +228,7 @@
   var info = document.querySelector(".ol-mobile-info");
   if (info) {
     var messages = {
-      notifications: ["Уведомления", "Список уведомлений не подключён в тестовом кабинете."],
-      help: ["Помощь", "Выберите раздел в нижнем меню. Документы и счета находятся в меню «Ещё». Фильтры расположены над списком, файл можно открыть значком глаза или скачать стрелкой."],
-      support: ["Онлайн-чат", "В тестовой версии чат не подключён. Для обращения в поддержку используйте рабочий личный кабинет."]
+      help: ["Помощь", "Выберите раздел в нижнем меню. Документы и счета находятся в меню «Ещё». Фильтры расположены над списком, файл можно открыть значком глаза или скачать стрелкой."]
     };
     document.querySelectorAll("[data-mobile-info]").forEach(function (button) {
       button.addEventListener("click", function () {
