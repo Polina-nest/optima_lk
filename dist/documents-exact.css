@@ -1,0 +1,13 @@
+@import url("requests-exact.css");
+@import url("exact-drawers.css");
+@import url("file-viewer.css");
+tr[data-doc-id]:hover td { background: #fbfcfc; }
+tr[data-doc-id] a, .areal-table__count a, .areal-filter__control-group a, .areal-pagination button { cursor: pointer; }
+.document-name { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+tr[data-doc-id] a { text-decoration: none !important; }
+button.document-name:hover { color: #5d87b4; }
+span.document-name { cursor: default; }
+.document-preview-disabled { display: inline-flex; padding: 0; border: 0; background: transparent; color: #dedede; cursor: default; }
+.document-preview-disabled .areal-icon-wrapper { color: inherit; stroke: currentColor; }
+.document-name:focus-visible { outline: 2px solid #5d87b4; outline-offset: 3px; }
+tr[data-doc-id] td { vertical-align: top; }

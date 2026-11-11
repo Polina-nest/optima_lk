@@ -1,0 +1,141 @@
+@import url("declarations-exact.css");
+
+body[data-page="declaration-detail-exact"] .areal-main {
+  min-width: 980px;
+  padding-top: 40px !important;
+}
+
+body[data-page="declaration-detail-exact"] .exact-chat {
+  bottom: 40px;
+}
+
+.declaration-ok {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #5cb85c;
+  border-radius: 50%;
+  color: #5cb85c;
+  font-weight: 700;
+}
+
+.declaration-detail-files {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.declaration-linked-request {
+  color: #587c9f;
+  text-decoration: none;
+}
+
+.declaration-detail-file {
+  display: grid;
+  grid-template-columns: 16px 16px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.declaration-detail-file button,
+.declaration-detail-file a {
+  color: #587c9f;
+  font-size: 10px;
+  line-height: 13px;
+  text-decoration: none;
+}
+
+.declaration-timeline--inactive {
+  opacity: 1;
+}
+
+.declaration-timeline--inactive .areal-timeline__item-title {
+  color: #8e9498;
+}
+
+.declaration-payment-success {
+  min-height: 42px;
+  margin-top: 12px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3fae8;
+  color: #333;
+  font-size: 12px;
+}
+
+.declaration-payment-success > span {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5cb85c;
+  border-radius: 50%;
+  color: #5cb85c;
+  font-weight: 600;
+}
+
+.declaration-payment-success div {
+  display: flex;
+  flex-direction: column;
+}
+
+.declaration-payment-success small {
+  margin-top: 1px;
+  font-size: 10px;
+}
+
+.declaration-payment-success--pending {
+  background: #fff9e8;
+}
+
+.declaration-request-tracking {
+  display: grid;
+  grid-template-columns: 170px minmax(260px, 1fr) 170px;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.declaration-request-tracking > div:not(.declaration-request-track) {
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.declaration-request-tracking small {
+  margin-top: 4px;
+  color: #555;
+  font-size: 9px;
+  line-height: 12px;
+}
+
+.declaration-request-track {
+  display: flex;
+  align-items: center;
+}
+
+.declaration-request-track span {
+  height: 2px;
+  flex: 1;
+  background: #5cb85c;
+}
+
+.declaration-request-track i {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #5cb85c;
+  border-radius: 50%;
+  color: #5cb85c;
+  font-size: 16px;
+  font-style: normal;
+}

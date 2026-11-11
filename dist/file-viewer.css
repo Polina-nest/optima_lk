@@ -1,0 +1,10 @@
+.exact-drawer--file { width: 80vw; min-width: 0; }
+.exact-drawer--file .exact-drawer__header { min-height: 96px; padding: 32px 64px 28px 32px; border: 0; }
+.exact-drawer--file .exact-drawer__title { font-size: 22px; line-height: 30px; font-weight: 500; }
+.exact-drawer--file .exact-drawer__body { margin: 0 32px 32px; }
+@media (max-width: 900px) {
+  .exact-drawer--file { width: 94vw; }
+  .exact-drawer--file .exact-drawer__header { min-height: 72px; padding: 22px 54px 18px 16px; }
+  .exact-drawer--file .exact-drawer__title { font-size: 16px; line-height: 24px; }
+  .exact-drawer--file .exact-drawer__body { margin: 0 16px 16px; }
+}

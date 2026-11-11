@@ -1,0 +1,105 @@
+@import url("requests-exact.css");
+
+tr[data-quote-id] {
+  cursor: pointer;
+}
+
+tr[data-quote-id]:hover td {
+  background: #fbfcfc;
+}
+
+.quote-expanded-row td {
+  padding: 0 24px 18px 44px !important;
+  background: #fbfcfc;
+}
+
+.quote-expanded-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 18px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #333;
+  font-size: 13px;
+}
+
+.quote-expanded-card span {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.quote-expanded-card small {
+  color: #989898;
+  font-size: 11px;
+}
+
+.quote-expanded-card a {
+  color: #587c9f;
+}
+
+.quote-filter-menu {
+  position: fixed;
+  z-index: 90;
+  min-width: 220px;
+  max-height: 260px;
+  overflow: auto;
+  padding: 4px 0;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(35, 43, 40, .15);
+}
+
+.quote-filter-menu button {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  border: 0;
+  background: #fff;
+  color: #333;
+  text-align: left;
+  font-size: 13px;
+}
+
+.quote-filter-menu button:hover {
+  background: #f6f7f8;
+}
+
+.exact-chat {
+  left: 46px;
+  bottom: 36px;
+  min-width: 250px;
+  height: 64px;
+  padding: 9px 24px 9px 14px;
+  gap: 11px;
+}
+
+.exact-chat img {
+  width: 43px;
+  height: 43px;
+}
+
+.exact-chat b {
+  font-size: 16px;
+}
+
+.exact-chat small {
+  font-size: 11px;
+}
+
+.exact-chat i {
+  top: 14px;
+  right: 18px;
+  width: 10px;
+  height: 10px;
+  border-width: 3px;
+}
+
+@media (max-width: 900px) {
+  .quote-expanded-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GoodsDeclaration test="true">
+  <DeclarationNumber>10702070/090926/0001004</DeclarationNumber>
+  <RelatedApplication>A-2026-103</RelatedApplication>
+  <DeclarationDate>09.09.2026</DeclarationDate>
+  <Status>ДТ выпущена</Status>
+  <Route>
+    <Origin>
+      <Country>КИТАЙ</Country>
+      <City>Шанхай (Shanghai)</City>
+      <Warehouse>Склад Отправителя</Warehouse>
+      <Shipper>тест</Shipper>
+    </Origin>
+    <Destination>
+      <Country>РОССИЯ</Country>
+      <City>Москва (Moscow)</City>
+      <Warehouse>склад ОЛ Склад Отправителя</Warehouse>
+      <Consignee>тест</Consignee>
+    </Destination>
+  </Route>
+  <Goods>
+    <Description>Промышленные датчики</Description>
+    <Weight>970 кг</Weight>
+    <Volume>5,1 м³</Volume>
+    <Packages>2 места</Packages>
+    <Value>31 800,00 €</Value>
+  </Goods>
+  <CustomsPayments>
+    <Planned>318 000,00 ₽</Planned>
+    <Actual>318 000,00 ₽</Actual>
+  </CustomsPayments>
+  <Notice>Демонстрационный документ. Не является таможенной декларацией.</Notice>
+</GoodsDeclaration>

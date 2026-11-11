@@ -1,0 +1,59 @@
+@import url("declarations-exact.css");
+@import url("file-viewer.css");
+
+body[data-page="invoices-exact"] .areal-main {
+  min-width: 1080px;
+}
+
+body[data-page="invoices-exact"] .areal-data-table__wrapper table {
+  table-layout: auto;
+}
+
+body[data-page="invoices-exact"] #organizationHeader,
+body[data-page="invoices-exact"] tr[data-invoice-id] > td:nth-child(2) {
+  min-width: 250px;
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+tr[data-invoice-id] {
+  cursor: default;
+}
+
+tr[data-invoice-id]:hover td {
+  background: #fbfcfc;
+}
+
+body[data-page="invoices-exact"] .areal-table__row__item:nth-child(4),
+body[data-page="invoices-exact"] .areal-table__row__item:nth-child(5) {
+  text-align: right;
+}
+
+.invoice-file-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  color: #5d87b4;
+}
+
+.invoice-file-actions button, .invoice-file-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #5d87b4;
+  cursor: pointer;
+}
+
+.invoice-file-actions svg { width: 20px; height: 20px; }
+.invoice-file-actions button:hover, .invoice-file-actions a:hover { color: #365e86; }
+.invoice-file-actions button:focus-visible, .invoice-file-actions a:focus-visible { outline: 2px solid #5d87b4; outline-offset: 2px; }
+
+body[data-page="invoices-exact"] .areal-tag__content {
+  white-space: nowrap;
+}

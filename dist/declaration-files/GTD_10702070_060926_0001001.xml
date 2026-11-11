@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GoodsDeclaration test="true">
+  <DeclarationNumber>10702070/060926/0001001</DeclarationNumber>
+  <RelatedApplication>A-2026-104</RelatedApplication>
+  <DeclarationDate>06.09.2026</DeclarationDate>
+  <Status>Готовность к подаче ДТ</Status>
+  <Route>
+    <Origin>
+      <Country>КИТАЙ</Country>
+      <City>Шанхай (Shanghai)</City>
+      <Warehouse>Склад Отправителя</Warehouse>
+      <Shipper>тест</Shipper>
+    </Origin>
+    <Destination>
+      <Country>РОССИЯ</Country>
+      <City>Москва (Moscow)</City>
+      <Warehouse>склад ОЛ Склад Отправителя</Warehouse>
+      <Consignee>тест</Consignee>
+    </Destination>
+  </Route>
+  <Goods>
+    <Description>Электронные компоненты</Description>
+    <Weight>620 кг</Weight>
+    <Volume>4,2 м³</Volume>
+    <Packages>1 место</Packages>
+    <Value>26 000,00 €</Value>
+  </Goods>
+  <CustomsPayments>
+    <Planned>185 000,00 ₽</Planned>
+    <Actual>0 ₽</Actual>
+  </CustomsPayments>
+  <Notice>Демонстрационный документ. Не является таможенной декларацией.</Notice>
+</GoodsDeclaration>

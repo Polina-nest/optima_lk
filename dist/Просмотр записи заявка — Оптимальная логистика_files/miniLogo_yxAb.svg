@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+  version="1.1"
+  id="svg2"
+  width="48"
+  height="48"
+  viewBox="0 0 435 435"
+  sodipodi:docname="Logo (main).ai"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+    id="defs6">
+    <linearGradient
+      x1="0"
+      y1="0"
+      x2="1"
+      y2="0"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="matrix(240.90044,-166.34972,166.34972,240.90044,86.996727,225.1734)"
+      spreadMethod="pad"
+      id="linearGradient34">
+      <stop
+        style="stop-opacity:1;stop-color:#ff6b01"
+        offset="0"
+        id="stop22" />
+      <stop
+        style="stop-opacity:1;stop-color:#ff6b01"
+        offset="0.01"
+        id="stop24" />
+      <stop
+        style="stop-opacity:1;stop-color:#ff9900"
+        offset="0.23"
+        id="stop26" />
+      <stop
+        style="stop-opacity:1;stop-color:#a2ea09"
+        offset="0.48"
+        id="stop28" />
+      <stop
+        style="stop-opacity:1;stop-color:#40cf22"
+        offset="0.74"
+        id="stop30" />
+      <stop
+        style="stop-opacity:1;stop-color:#2e9a18"
+        offset="1"
+        id="stop32" />
+    </linearGradient>
+    <clipPath
+      clipPathUnits="userSpaceOnUse"
+      id="clipPath44">
+      <path
+        d="M 0,327.22 H 1324.844 V 0 H 0 Z"
+        id="path42" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+    id="namedview4"
+    pagecolor="#ffffff"
+    bordercolor="#000000"
+    borderopacity="0.25"
+    inkscape:showpageshadow="2"
+    inkscape:pageopacity="0.0"
+    inkscape:pagecheckerboard="0"
+    inkscape:deskcolor="#d1d1d1" />
+  <g
+    id="g8"
+    inkscape:groupmode="layer"
+    inkscape:label="Logo (main)"
+    transform="matrix(1.3333333,0,0,-1.3333333,0,436.29333)"
+  >
+    <g
+      id="g10">
+      <g
+        id="g12">
+        <g
+          id="g18">
+          <g
+            id="g20">
+            <path
+              d="M 66.064,236.677 C 19.541,181.329 26.789,98.512 82.247,52.105 v 0 l 18.855,22.398 C 156.56,28.072 239.517,35.306 286.041,90.653 v 0 c 46.524,55.349 39.275,138.141 -16.182,184.596 v 0 l -18.831,-22.423 c -24.551,20.555 -54.506,30.593 -84.294,30.595 v 0 c -37.5,0.003 -74.741,-15.899 -100.67,-46.744 M 176.065,69.433 c -52.135,0 -94.421,42.177 -94.421,94.232 v 0 c 0,52.055 42.263,94.208 94.421,94.208 v 0 c 52.158,0 94.42,-42.177 94.42,-94.231 v 0 c 0,-52.055 -42.262,-94.234 -94.42,-94.234 v 0 z"
+              style="fill:url(#linearGradient34);stroke:none"
+              id="path36" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

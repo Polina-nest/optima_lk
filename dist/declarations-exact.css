@@ -1,0 +1,181 @@
+@import url("requests-exact.css");
+@import url("exact-drawers.css");
+
+body[data-page="declarations-exact"] .areal-main {
+  min-width: 980px;
+  padding-top: 40px !important;
+}
+
+body[data-page="declarations-exact"] h1.headline {
+  font-size: 24px !important;
+  line-height: 26px !important;
+  font-weight: 400 !important;
+}
+
+body[data-page="declarations-exact"] .table-registry-declaration1-wrapper__block {
+  margin-top: 24px !important;
+}
+
+body[data-page="declarations-exact"] .areal-filter {
+  min-height: 64px;
+  padding: 14px 16px !important;
+}
+
+body[data-page="declarations-exact"] .table-registry-actions__wrapper {
+  margin-top: 14px !important;
+  row-gap: 10px;
+}
+
+body[data-page="declarations-exact"] .areal-counter-tags--size-S {
+  min-height: 28px;
+}
+
+body[data-page="declarations-exact"] .areal-counter-tags--size-S .areal-counter-tags__content {
+  padding: 6px 12px;
+}
+
+body[data-page="declarations-exact"] .areal-table {
+  margin-top: 14px !important;
+}
+
+body[data-page="declarations-exact"] .areal-data-table__wrapper table {
+  table-layout: fixed;
+}
+
+body[data-page="declarations-exact"] col:nth-child(1) { width: 240px; }
+body[data-page="declarations-exact"] col:nth-child(2) { width: 8%; }
+body[data-page="declarations-exact"] col:nth-child(3) { width: auto; }
+body[data-page="declarations-exact"] col:nth-child(4) { width: 12%; }
+body[data-page="declarations-exact"] col:nth-child(5) { width: 12%; }
+body[data-page="declarations-exact"] col:nth-child(6) { width: 15%; }
+
+body[data-page="declarations-exact"] .areal-table__header__item {
+  height: 40px;
+  padding: 10px 12px !important;
+  font-size: 12px;
+  line-height: 14px;
+  vertical-align: middle;
+}
+
+body[data-page="declarations-exact"] .areal-table__row__item {
+  padding: 8px 12px !important;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+body[data-page="declarations-exact"] .areal-table__row__item .areal-text-t3 {
+  font-size: 12px !important;
+  line-height: 15px !important;
+}
+
+body[data-page="declarations-exact"] .areal-table__row__item .areal-text-caption1 {
+  font-size: 10px !important;
+  line-height: 12px !important;
+}
+
+body[data-page="declarations-exact"] .areal-table a {
+  text-decoration: none !important;
+}
+
+/* Keep the request and declaration number on two separate, readable lines. */
+body[data-page="declarations-exact"] #external_numberHeader,
+body[data-page="declarations-exact"] tr[data-declaration-id] > td:first-child {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+body[data-page="declarations-exact"] tr[data-declaration-id] > td:first-child > div {
+  row-gap: 2px !important;
+  align-items: flex-start;
+}
+
+body[data-page="declarations-exact"] tr[data-declaration-id] > td:first-child .areal-text-t3,
+body[data-page="declarations-exact"] tr[data-declaration-id] > td:first-child .areal-text-caption1 {
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+body[data-page="declarations-exact"] tr[data-declaration-id] > td:first-child a {
+  color: #5d87b4;
+}
+
+body[data-page="declarations-exact"] tr[data-declaration-id] > td:first-child .areal-text-caption1 {
+  color: #111;
+  font-weight: 400;
+}
+
+tr[data-declaration-id] {
+  cursor: pointer;
+}
+
+tr[data-declaration-id]:hover td {
+  background: #fbfcfc;
+}
+
+.declaration-actions button,
+.invoice-file-actions button {
+  padding: 3px;
+  color: #989898;
+}
+
+.declaration-actions button:hover,
+.invoice-file-actions button:hover {
+  color: #587c9f;
+}
+
+body[data-page="declarations-exact"] .areal-table__row__item:nth-child(2),
+body[data-page="declarations-exact"] .areal-table__row__item:nth-child(4),
+body[data-page="declarations-exact"] .areal-table__row__item:nth-child(5) {
+  text-align: right;
+}
+
+.declaration-status-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  min-width: 0;
+}
+
+.declaration-status-cell .areal-tag {
+  min-height: 18px;
+  padding: 2px 6px;
+  border-radius: 0;
+  background: var(--tag-bg);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+.declaration-file {
+  display: grid;
+  grid-template-columns: 16px 16px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 5px;
+  width: 100%;
+  color: #587c9f;
+}
+
+.declaration-file--actions {
+  grid-template-columns: 16px 16px;
+}
+
+.declaration-file button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  color: #989898;
+}
+
+.declaration-file a {
+  min-width: 0;
+  overflow: hidden;
+  color: #587c9f;
+  font-size: 10px;
+  line-height: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+}

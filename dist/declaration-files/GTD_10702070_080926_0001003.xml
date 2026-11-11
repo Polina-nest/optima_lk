@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GoodsDeclaration test="true">
+  <DeclarationNumber>10702070/080926/0001003</DeclarationNumber>
+  <RelatedApplication>A-2026-105</RelatedApplication>
+  <DeclarationDate>08.09.2026</DeclarationDate>
+  <Status>ДТ выпущена</Status>
+  <Route>
+    <Origin>
+      <Country>КИТАЙ</Country>
+      <City>Шанхай (Shanghai)</City>
+      <Warehouse>Склад Отправителя</Warehouse>
+      <Shipper>тест</Shipper>
+    </Origin>
+    <Destination>
+      <Country>РОССИЯ</Country>
+      <City>Москва (Moscow)</City>
+      <Warehouse>склад ОЛ Склад Отправителя</Warehouse>
+      <Consignee>тест</Consignee>
+    </Destination>
+  </Route>
+  <Goods>
+    <Description>Фармацевтическая упаковка</Description>
+    <Weight>1 240 кг</Weight>
+    <Volume>6,8 м³</Volume>
+    <Packages>5 мест</Packages>
+    <Value>45 000,00 €</Value>
+  </Goods>
+  <CustomsPayments>
+    <Planned>1 250 000,00 ₽</Planned>
+    <Actual>1 250 000,00 ₽</Actual>
+  </CustomsPayments>
+  <Notice>Демонстрационный документ. Не является таможенной декларацией.</Notice>
+</GoodsDeclaration>

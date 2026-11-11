@@ -1,0 +1,229 @@
+.exact-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  background: rgba(27, 30, 33, 0.34);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.exact-drawer-backdrop.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.exact-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9998;
+  display: flex;
+  width: min(43vw, 840px);
+  min-width: 560px;
+  height: 100vh;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: -8px 0 28px rgba(24, 31, 36, 0.12);
+  transform: translateX(102%);
+  transition: transform 200ms ease;
+}
+
+.exact-drawer--document {
+  width: min(55vw, 920px);
+}
+
+.exact-drawer.is-open {
+  transform: translateX(0);
+}
+
+body.exact-drawer-open {
+  overflow: hidden !important;
+}
+
+.exact-drawer__header {
+  position: relative;
+  flex: 0 0 auto;
+  min-height: 104px;
+  padding: 31px 64px 24px 32px;
+  border-bottom: 1px solid #e1e3e5;
+  background: #fff;
+}
+
+.exact-drawer--document .exact-drawer__header {
+  min-height: 72px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.exact-drawer__title {
+  margin: 0;
+  color: #25282b;
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.exact-drawer--document .exact-drawer__title {
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exact-drawer__subtitle {
+  margin-top: 6px;
+  color: #25282b;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.exact-drawer__close {
+  position: absolute;
+  top: 23px;
+  right: 24px;
+  display: grid;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #393d40;
+  cursor: pointer;
+}
+
+.exact-drawer__close::before,
+.exact-drawer__close::after {
+  position: absolute;
+  width: 21px;
+  height: 1.5px;
+  background: currentColor;
+  content: "";
+}
+
+.exact-drawer__close::before { transform: rotate(45deg); }
+.exact-drawer__close::after { transform: rotate(-45deg); }
+
+.exact-drawer__body {
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: auto;
+  background: #fff;
+}
+
+.exact-document-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #d7d8da;
+}
+
+.exact-tracking-list {
+  position: relative;
+  min-height: 100%;
+  padding: 30px 30px 42px;
+}
+
+.exact-tracking-step {
+  display: grid;
+  grid-template-columns: minmax(150px, 31%) 44px minmax(110px, 22%) minmax(160px, 1fr);
+  min-height: 102px;
+  column-gap: 14px;
+  color: #25282b;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.exact-tracking-step__place {
+  padding-top: 2px;
+  text-align: right;
+}
+
+.exact-tracking-step__place strong {
+  display: block;
+  font-weight: 600;
+}
+
+.exact-tracking-step__place span {
+  display: block;
+  color: #61676b;
+}
+
+.exact-tracking-step__axis {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.exact-tracking-step__axis::after {
+  position: absolute;
+  top: 24px;
+  bottom: -2px;
+  left: calc(50% - 1px);
+  width: 2px;
+  background: #cfd2d4;
+  content: "";
+}
+
+.exact-tracking-step.is-done .exact-tracking-step__axis::after {
+  background: #4fb957;
+}
+
+.exact-tracking-step:last-child .exact-tracking-step__axis::after {
+  display: none;
+}
+
+.exact-tracking-step__marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 2px solid #cfd2d4;
+  border-radius: 50%;
+  background: #fff;
+  color: #cfd2d4;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.exact-tracking-step.is-done .exact-tracking-step__marker {
+  border-color: #4fb957;
+  color: #32b843;
+}
+
+.exact-tracking-step.is-start .exact-tracking-step__marker {
+  width: 29px;
+  height: 29px;
+  font-size: 16px;
+}
+
+.exact-tracking-step__date,
+.exact-tracking-step__event {
+  padding-top: 2px;
+}
+
+.exact-tracking-step__date span,
+.exact-tracking-step__event span {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .exact-drawer,
+  .exact-drawer--document {
+    width: 88vw;
+    min-width: 0;
+  }
+
+  .exact-tracking-step {
+    grid-template-columns: minmax(110px, 31%) 34px minmax(90px, 23%) minmax(120px, 1fr);
+    column-gap: 8px;
+  }
+}

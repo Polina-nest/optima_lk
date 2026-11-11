@@ -1,0 +1,58 @@
+@import url("exact-drawers.css");
+
+.request-spec-row {
+  cursor: pointer;
+}
+
+.request-spec-row:hover td {
+  background: #fbfcfc;
+}
+
+.request-spec-paid {
+  display: block;
+  margin-top: 2px;
+  color: #5cb85c;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.request-spec-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  min-width: 0;
+}
+
+.request-spec-status > span {
+  padding: 2px 6px;
+  background: var(--spec-status);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+.request-spec-file {
+  display: grid;
+  grid-template-columns: 16px 16px minmax(0, 1fr);
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.request-spec-file a,
+.request-spec-file button {
+  min-width: 0;
+  color: #587c9f;
+  font-size: 10px;
+  line-height: 13px;
+  text-decoration: none;
+}
+
+.request-spec-file a:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
